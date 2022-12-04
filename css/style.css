@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+:root {
+  --fundo: rgb(27, 56, 0);
+  --botao: rgb(4, 13, 44);
+  --corBotao: rgb(255, 255, 255);
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--fundo);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 50%;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  box-shadow: 4px 4px 4px 5px #000;
+  border-radius: 5px;
+}
+
+#resultado{
+  margin-bottom: 10px;
+}
+
+.titulo, form input{
+  font-family: 'Catamaran', sans-serif;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 40px;
+  padding: 0 10px;
+  cursor: text;
+  transition: 0.5 ease-in-out;
+  border: 0;
+  border-radius: 5px;
+  border-bottom: 2px solid #040D2C;
+  outline: 0;
+}
+
+.btns{
+  display: flex;
+  width: 100%;
+}
+
+.btn-refazer{
+  width: 20%;
+  height: 45px;
+  margin-right: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  border: none;
+  box-shadow: 2px 3px 3px #cecece;
+  transition: 0.5s;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+form .calcular {
+  border: none;
+  background: var(--botao);
+  color: var(--corBotao);
+  font-size: 18px;
+  width: 80%;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #cecece;
+  transition: 0.5s;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+form button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px #c9c9c9;
+  transition: 0.5s;
+}
+
+.resultado{
+  background:rgb(13, 255, 0);
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px #000;
+}
+
+.erro{
+  background: rgb(228, 15, 15);
+  padding: 10px 20px;
+  color:#fff;
+  box-shadow: 2px 2px 2px 2px #000;
+}
+
+
+
